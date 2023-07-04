@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaSript Strings</title>
+</head>
+<body>
+    <h2>JavaSript Strings</h2>
+    <p id="para"></p>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+</body>
+<script>
+    let mystring = "Hello World!!!!!!!";
+    console.log(mystring);
+    //find the length of the string in JS
+    console.log("Length of the mystring is = ",mystring.length);
+    //inbuilt methods in JS for string
+    let str = "White, Black, Blue";
+    console.log(str.length);
+    console.log(str.slice(7,12));
+    let newStr = str.slice(7,12);
+    document.getElementById("para").innerHTML = newStr;
+
+    let newstr1 = str.slice(7);
+    document.getElementById("para1").innerHTML = newstr1;
+
+    let newstr2 = str.slice(-12,-6);
+    document.getElementById("para2").innerHTML = newstr2;
+
+    //Substr method in JS
+    let strs = "Vijay, Jayesh, Ashu";
+    console.log(strs.substr(7));
+
+    //Replace in String
+    let word = "Please come Udaipur";
+    let word1 = "I will welcome you";
+
+    console.log(word.replace("","Jaipur"));
+    let newword = word.replace("Udaipur","Jaipur")
+    document.getElementById("para3").innerHTML = newword;
+
+    //Replace ALL in JS
+    let names = "My name is Jayeshhhhhh vyas. Jayeshhhhhh is mentor at edyoda";
+    let newName  = names.replaceAll("Jayeshhhhhh","Jayesh");
+    console.log(names.replace("Jayeshhhhhh","Jayeshhhhhh".toUpperCase()));
+
+    let text = "Jayesh Vyas";
+    console.log(text.charAt(2));
+
+    //write a program in JS if string is Edyoda print "YES" else print "NO";
+    let strcheck = "EDYODA";
+    if (strcheck == "Edyoda" || strcheck=="EDYODA"){
+        alert("YES");
+    }
+    else{
+        alert("NO");
+    }
+
+
+</script>
+</html>
