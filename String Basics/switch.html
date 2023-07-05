@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement in JS</title>
+</head>
+<body>
+    <h2>Switch Statement in JS</h2>
+    <p id="para"></p>
+    <input type="text" id="id1" />
+    <button onclick="myFunc()">Try It...</button>
+    <p id="demo"></p>
+</body>
+<script>
+    let day;
+    switch (new Date().getDay()){
+        case 0:
+            day="Sunday";
+            break;
+        case 1:
+            day="Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case  6:
+            day = "Saturday";
+    }
+    document.getElementById("demo").innerHTML = "Present Day is " + day;
+
+
+    // function myFunc(){
+    //     let color;
+    //     let fvrtColor = document.getElementById("id1").value;
+    //     switch(fvrtColor){
+    //         case "Blue":
+    //             color = "Your choice is = "+fvrtColor;
+    //             break;
+    //         case "Green":
+    //             color = "Your choice is = "+fvrtColor;
+    //             break;
+    //         case "Black":
+    //             color = "Your choice is = "+fvrtColor;
+    //             break;
+    //         default: 
+    //             color = "Not a correct input";    
+    //     }
+    //     document.getElementById("para").innerHTML = color;
+    // }
+</script>
+</html>

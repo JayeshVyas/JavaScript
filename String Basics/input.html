@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Input</title>
+</head>
+<body>
+    <h2>
+        Inputs in JS using prompt
+    </h2>
+    <p id="para"></p>
+    <button onclick="myFunc()">Click for Magic!!</button>
+
+</body>
+<script>
+    function myFunc(){
+        let myName = prompt("Enter Your Name","Jayesh Vyas");
+        if(myName != null){
+            document.getElementById("para").innerHTML="Hello"+myName;
+        }
+    }
+</script>
+</html>
