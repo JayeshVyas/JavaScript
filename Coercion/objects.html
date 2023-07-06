@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <h2>Objects in JS</h2>
+    <!--
+        1. By Object Literals
+        2. By Creating instance of obj.
+        3. By using constructors
+    -->
+</body>
+<script>
+    // By Object Literals
+    student = {firstname:"Jayesh",LastName:"Vyas",Age:"28",salary:"40 LPA"}
+    console.log(student);
+    document.write("First Name  is = ",student.firstname  + " "+
+     "Last Name is = ", student.salary);
+
+    // //By Creating instance of object.
+    var stud = new Object();
+    stud.id = 101;
+    stud.name = "Jayesh Vyas"
+    stud.position ="Senior Tech Lead"
+
+    document.write(stud.id+": "+stud.name+" : "+stud.position)
+
+    //By using Constructors
+    function studInfo(id,name,salary){
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+    s = new studInfo(102,"Vijay vyas",40000000);
+    s1 = new studInfo(104,"Ajay vyas",20000000);
+    document.write("ID = ",s.id+" Name = ",s.name+" Salary = ",s.salary);
+    document.write("ID = ",s1.id+" Name = ",s1.name+" Salary = ",s1.salary);
+    console.log(s);
+
+
+
+
+</script>
+</html>
