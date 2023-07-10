@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator in HTML</h2>
+
+</body>
+<script>
+    let result;
+    const operator = prompt("Enter Operator (+, -, *, /)");
+
+    //take the inputs from the user
+    const num1 = parseFloat(prompt('Enter first Number'));
+    const num2 = parseFloat(prompt('Enter Second Number'));
+
+    //switch operation
+    switch(operator){
+        case '+':
+            result = num1 + num2;
+            console.log(`${num1} + ${num2} = ${result}`);
+            break;
+        case '-':
+            result =num1 - num2;
+            console.log(`${num1} - ${num2} = ${result}`);
+            break;
+        case '*':
+            result = num1 * num2;
+            console.log(`${num1} * ${num2} = ${result}`);
+            break;
+        case '/':
+            result = num1 / num2;
+            console.log(`${num1} / ${num2} = ${result}`);
+            break;
+        default:
+            alert("Invalid Operator \n it should be (+, -, *, /)")
+
+
+
+
+    }
+</script>
+</html>

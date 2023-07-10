@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers in JS</title>
+</head>
+<body>
+    <h2>
+        Numbers in JS
+    </h2>
+    <script>
+        let a = 123;
+        a = a.toString();
+        console.log(a);
+        console.log(a.toString());
+        console.log(typeof(a));
+
+        //valueOf()
+        //toPrecision()
+        //toFxied()
+        //toExponential()
+
+        console.log(Number(true));
+        console.log(Number(false));
+
+        var a1 = 100;
+        var s2  = "100";
+
+
+        console.log(Number("100"));
+        console.log(Number(100));
+
+        console.log(Number("Jayesh"));
+        console.log(Number("100.456,33.5"));
+        console.log(Number("100335"));
+
+        console.log(Number.isInteger(1000));
+
+        //ParseInt
+        console.log(parseInt("-100"));
+        console.log(parseInt("-100.5678"))
+        console.log(typeof(parseInt("100")));
+        console.log(parseInt("100 years"));
+
+        //range of integer
+        //-2,147,483,647 to 2,147,483,647
+
+        //parseFloat - 10 == 10.0000
+        console.log(parseFloat("10"))
+        console.log(parseFloat("100.345"))
+        console.log(parseFloat("100 600"))
+        console.log(parseFloat("100 Jayesh"))
+        console.log(parseFloat("jayesh 100 Jayesh"))
+
+
+        console.log(Number.MAX_VALUE);
+
+
+
+    </script>
+</body>
+</html>
