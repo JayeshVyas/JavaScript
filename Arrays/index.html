@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <h2>Arrays in JS</h2>
+    <p id ="para"></p>
+</body>
+<script>
+    //An array is a special type of variable in JS
+    //that can store more than one values in single variable
+    const names =  ["Jayesh",234,"Vinit"];
+    names[0] ="Akshay";
+
+   // document.write(names);
+    console.log(names);
+
+    const names1 = [];
+    names1[0] = "Vijay";
+    names1[1] = "Usha";
+
+    console.log(names1);
+
+    //Using the new keyword
+    const names2 = new Array("Harish","Mohit","Shiva",234);
+    console.log(names2[names2.length-1]);
+    document.getElementById("para").innerHTML = names2.toString();
+
+    const names3 = {FirstName:"Jayesh",lastName:"Vyas",Age:28}
+    console.log(names3.Age);
+
+    //iteration of the Arrays
+    const colors = ["Black","Blue","White","Green","Orange"];
+    for(let a = colors.length-1 ; a >= 0 ;a--){
+        if(colors[a]=="Green")
+        console.log(colors[a]);
+    }
+    
+    colors.push("Grey");
+    console.log(colors);
+    colors[colors.length] = "Purple"
+    colors.unshift("yellow");
+    console.log(colors)
+
+</script>
+</html>

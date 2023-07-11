@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Methos in JS</title>
+</head>
+<body>
+    <h2>Arrays Methos in JS</h2>
+    <script>
+        //length
+        const cars = ["BMW","Audi","Maruti","Nano"];
+      //  alert(cars);
+        //toString
+        //join in JS
+     //   alert(cars.join("=>"))
+        cars.push("Tata");
+        console.log(cars);
+        cars.pop();
+        console.log(cars);
+        cars.shift();
+        console.log(cars);
+       // delete cars[0];
+       // console.log(cars);
+
+       const bikes = ["Yamaha","Honda","Splendar","Pulsar"];
+       console.log(cars.concat(bikes));
+
+       const cycles = ["Atlus","ShartShooter","AVON"];
+       const add = cars.concat(bikes,cycles);
+       console.log(add);
+
+       const demoArr = [["Jayesh","Ajay"],["Anuj","Vijay"],["Sanjay","Vinit"]];
+       console.log(demoArr[0].concat(demoArr[1],demoArr[2]));
+       console.log(demoArr.flat());
+
+    </script>
+</body>
+</html>
