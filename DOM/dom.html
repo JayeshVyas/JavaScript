@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in JS</title>
+    <script type="text/javaScript" src="dom.js"></script>
+
+</head>
+<body>
+    <h2>DOM in JS</h2>
+    <div id = "demo1">
+        <p id="demo">Hello Jayesh</p>
+
+    </div>
+</body>
+<script>
+    let ele = document.getElementById("demo");
+    ele.innerHTML="Hello Jayesh Vyas JS"
+
+    const para =document.createElement("p");
+    const node = document.createTextNode("para value");
+
+    para.appendChild(node);
+    const ele1 = document.getElementById("demo1");
+    ele1.appendChild(para);
+
+</script>
+</html>
