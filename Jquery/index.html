@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery in JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("#hide").dblclick(function(){
+        //         $("p").toggle();   
+        //     });
+           
+        // });
+        $(document).ready(function(){
+            $("p").mouseup(function(){
+               alert("Mouse Up");
+            });
+        })
+    </script>
+</head>
+<body>
+    <h2 class="header">Jquery in JS with Jayesh Vyas</h2>
+    <p> First Paragraph for Jquery in first class</p>
+    <p> First Paragraph for Jquery in first class</p>
+    <button id="hide">Show()/Hide()</button>
+    <!-- <button id="show">Show()</button> -->
+</body>
+</html>
