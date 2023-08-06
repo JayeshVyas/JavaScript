@@ -12,18 +12,94 @@
         //     });
            
         // });
+        // $(document).ready(function(){
+        //     $("p").mouseup(function(){
+        //        alert("Mouse Up");
+        //     });
+        // })
+
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //         alert("text of HTML = "+$("#para").text());
+        //     });
+        //     $("#btn2").click(function(){
+        //         alert("HTML  = "+$("#para").html())
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         //alert("Value of text = "+$("#txt").val());
+        //         alert($("#google").attr("href"));
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $("#btn").click(function(){
+        //         $("ol").prepend("<li>Added items</li>")
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("h1,p").addClass("green");
+        //     })
+        // })
+
         $(document).ready(function(){
-            $("p").mouseup(function(){
-               alert("Mouse Up");
-            });
+            $("button").click(function(){
+                $.post("info.txt",{
+                    "firstname":"JAYESH"
+                },function(data,status){
+                    alert(data);
+                })
+            })
         })
+
     </script>
+    <style>
+        .green{
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    <h2 class="header">Jquery in JS with Jayesh Vyas</h2>
+    <!-- <h2 class="header">Jquery in JS with Jayesh Vyas</h2>
     <p> First Paragraph for Jquery in first class</p>
     <p> First Paragraph for Jquery in first class</p>
-    <button id="hide">Show()/Hide()</button>
+    <button id="hide">Show()/Hide()</button> -->
     <!-- <button id="show">Show()</button> -->
+
+
+    <!-- <p id="para">Dom Manupulation <i>Jayesh Vyas</i> <b>Edyoda</b>using Jquery in JS</p>
+
+    <input type="text" id="txt" value="JavaScript"><BR>
+    <button>Click here</button>
+    <a href="www.google.com" id="google">Goggle.com</a> -->
+    <!-- <button id="btn1">Text</button>
+    <button id="btn2">HTML Document</button> -->
+
+    <!--Add in Jquery-->
+    <!-- <p>Jquery Add</p>
+    <ol>
+        <li>
+            Item 1
+        </li>
+        
+        <li>
+            Item 2
+        </li>
+        
+        <li>
+            Item 3
+        </li>
+    </ol>
+<button id="btn">Add</button> -->
+<h1>Heading of CSS</h1>
+<p>Jquery CSS Begins</p>
+<p>classes JS</p>
+
+<button>Click here to add CSS</button>
+
 </body>
 </html>
